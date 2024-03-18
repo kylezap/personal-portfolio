@@ -1,0 +1,62 @@
+/* Universal Selectors */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    
+}
+
+/* Header */
+
+header {
+    padding: 10px;
+    width: auto;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #04380d;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 36px;
+}
+
+header h1 span {
+    color: #d9dcd6;
+}
+
+/* Navigation */
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
