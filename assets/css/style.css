@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 body {
@@ -17,7 +17,10 @@ body {
 a {
     color: #ffffff;
     text-decoration: none;
+}
 
+a:hover {
+    color: gray;
 }
 
 p {
@@ -28,7 +31,6 @@ img {
     position: absolute;
     align-items: baseline;
     left: 0;
-    
 }
 
 ul {
@@ -38,7 +40,6 @@ ul {
 /* Header */
 
 header {
-    /* padding: 10px; */
     position: relative;
     display: flex;
     height: 60px;
@@ -82,11 +83,9 @@ nav ul li {
 
 main {
     position: relative;
-    width: 75%;
+    width: 90%;
     height: fit-content;
     margin: 0 auto;
-    align-items: center;
-    /* text-align: center; */
 }
 
 /* About */
@@ -96,12 +95,13 @@ main {
     max-width: 100%;
     height: 100px;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     margin: 20px;
+    border-bottom: 2px black;
 }
 
 p.about-copy {
-    padding-left: 10px;
+    padding-left: 20px;
     margin: 20px;
 
 }
@@ -126,41 +126,73 @@ h2#aligned {
     
 }
 
-.container {
-
-}
-
 article {
-    background-color: green;
     margin: 20px;
     border-radius: 5px;
+    position: relative;
 }
 
 .big {
-    height: 300px;
-    width: 84%;
+    height: 200px;
+    width: 85%;
+    background-image: url(/challenges/personal-portfolio/assets/images/Horiseon-landing-page.png);
+    background-size: cover;
+    border-radius: 10px;
 }
 
 .small {
     height: 200px;
     width: 40%;
+    background-image: url(/challenges/personal-portfolio/assets/images/coming-soon.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.small:hover, .big:hover {
+    box-shadow: 5px 5px 5px black;
+    opacity: 0.75;
+    transition: all 300ms ease-in;
+}
+
+.big a {
+    height: auto;
+    width: auto;
+    position: absolute;
+    z-index: 99999;
+    background-color: #04380d;
+    bottom: 40px;
+    padding: 5px;
 
 }
+
+/* Footer */
 
 footer {
     background-color: #04380d;
     color: white;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    height: 150px;
+    
     
 }
 
 section#contact {
-    position: relative;
-    width: 200px;
-    text-align: center;
+    width: 90%;
+    
+}
+
+#footer-box {
+    margin: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+
+#footer-box li {
+    
+    
     
 }
 
@@ -172,9 +204,3 @@ section#contact {
       }
     }
   
-
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
