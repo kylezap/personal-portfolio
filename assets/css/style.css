@@ -10,6 +10,8 @@
 
 body {
     background-color: whitesmoke;
+    min-width: 576px;
+
 }
 
 a {
@@ -87,19 +89,28 @@ main {
     /* text-align: center; */
 }
 
+/* About */
+
 #about {
     display: flex;
     max-width: 100%;
     height: 100px;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 p.about-copy {
     padding-left: 10px;
+    margin: 20px;
 
 }
 
+/* Projects */
+
+h2#aligned {
+    margin-left: 20px;
+}
 
 #projects {
     display: flex;
@@ -153,15 +164,17 @@ section#contact {
     
 }
 
-@media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
-  }
-  
+ 
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
+      .small {
+        width: 84%;
+      }
+    }
+  
+
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
     }
   }
